@@ -1,0 +1,105 @@
+.main-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+.card {
+    width: 38rem;
+    background: var(--white-color);
+    display: flex;
+    border-radius: 8px;
+}
+
+.card .img-left {
+    width: 300px;
+    height: 450px;
+    border-radius: 8px 0 0 8px;
+}
+
+.card h1 {
+    font-family:'Fraunces', serif;
+    color: var(--dark-blue);
+}
+
+
+.price-content h1 {
+    color: var(--dark-cyan);
+}
+
+.price-content {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    /* margin-left: 3rem; */
+    align-items: center;
+    /* margin-bottom: 2.5em; */
+    font-family: 'Fraunces', serif;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Outfit', sans-serif;
+}
+button:hover {
+    background: hsl(158, 36%, 15%);
+  }
+.flex-itme-content p {
+    color: var(--dark-grayish-blue);
+}
+
+.btn {
+    width: 16rem;
+    background: var(--dark-cyan);
+    color: var(--white-color);
+    border: none;
+    padding: 15px;
+    border-radius: 4px;
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.card>.flex-item-image {
+    flex: 50%;
+}
+
+.card>.flex-itme-content {
+    flex: 50%;
+}
+
+.card-content{
+    gap: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    max-width: 212px;
+}
+p{
+    /* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+font-family: 'Outfit', sans-serif;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 375px) {
+    
+    .card {
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        top: 0;
+        width: 100vw;
+        height: auto;
+    }
+    
+    .card .img-left {
+       content: url('../assets/images/image-product-mobile.jpg');
+       width: 100vw;  
+        border-radius: 16px 16px 0 0;
+    }
+    button {
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+      }
+}
